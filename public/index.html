@@ -1,0 +1,58 @@
+<head>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class='outer-container'>
+        <div class='scores'>
+            <div class='score-1'>
+                <div>player 1</div>
+                <div class='points1'>0</div>
+            </div>
+            <div class='score-2'>
+                <div>computer</div>
+                <div class='points2'>0</div>
+            </div>
+        </div>
+        <button class='reset'>Reset All</button>
+        <div class='userTurn'>
+            <p>Your turn!</p>
+        </div>
+        <div class='computerTurn'>
+            <p>Computer's turn!</p>
+        </div>
+        <div class='inner-container'>
+            <div class='chooseText'>Would you like to be X or O ?</div>
+            <div class='playerChoice'>
+                <button class='xbutton'>X</button>
+                <button class='obutton'>O</button>
+            </div>
+        </div>
+        <div class='gameBoard'>
+            <canvas id='canvas'></canvas>
+            <ul class='boxes'>
+                <li class='k1'></li>
+                <li class='k2'></li>
+                <li class='k3'></li>
+                <li class='k4'></li>
+                <li class='k5'></li>
+                <li class='k6'></li>
+                <li class='k7'></li>
+                <li class='k8'></li>
+                <li class='k9'></li>
+            </ul>
+        </div>
+        <div class='draw-message'>
+            <p>it was a draw</p>
+        </div>
+        <div class='lose-message'>
+            <p>oh oh..you lost</p>
+        </div>
+        <div class='win-message'>
+            <p>congratulation! you win</p>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="game.js"></script>
+</body>

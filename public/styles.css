@@ -1,0 +1,203 @@
+html,
+body {
+    position: relative;
+    height: 100%;
+}
+
+.outer-container {
+    position: relative;
+    text-align: center;
+    height: 440px;
+    width: 400px;
+    margin: 150px auto;
+    background: RGB(240, 180, 135);
+    border-radius: 4%;
+}
+
+.scores {
+    width: 350px;
+    margin: 0px auto;
+    padding: 5px;
+    display: none;
+}
+
+.score-1,
+.score-2 {
+    width: 100px;
+    display: inline-block;
+    flex-direction: column;
+    text-align: center;
+}
+
+.reset {
+    position: absolute;
+    top: 10px;
+    right: 30px;
+    cursor: pointer;
+    display: none;
+}
+
+.reset:hover {
+    background: none;
+}
+
+.userTurn {
+    display: table;
+    position: absolute;
+    left: 15px;
+    width: 150px;
+    height: 40px;
+    background: RGB(0, 200, 200);
+    z-index: -100;
+}
+
+.userTurn p {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    color: white;
+}
+
+.computerTurn {
+    display: table;
+    position: absolute;
+    right: 15px;
+    top: 0px;
+    width: 150px;
+    height: 40px;
+    background: RGB(0, 200, 200);
+    z-index: -100;
+}
+
+.computerTurn p {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    color: white;
+}
+
+.inner-container {
+    position: absolute;
+    height: 340px;
+    width: 340px;
+    top: 0px;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+    margin: auto;
+    background-color: RGB(26, 49, 41);
+}
+
+.chooseText {
+    width: 300px;
+    font-size: 35px;
+    color: white;
+    position: absolute;
+    text-align: center;
+    top: 90px;
+    right: 0px;
+    left: 0px;
+    margin: auto;
+}
+
+.playerChoice {
+    height: 25px;
+    width: 300px;
+    position: absolute;
+    text-align: center;
+    top: 190px;
+    right: 0px;
+    left: 0px;
+    margin: auto;
+}
+
+.xbutton,
+.obutton {
+    width: 40px;
+    height: 40px;
+    font-size: 35px;
+    color: RGB(146, 160, 153);
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.xbutton:hover,
+.obutton:hover {
+    color: white;
+}
+
+.gameBoard {
+    position: absolute;
+    display: none;
+    margin-left: 0px;
+    padding-left: 0px;
+    color: white;
+    font-size: 30px;
+    height: 324px;
+    width: 324px;
+    top: 0px;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+    margin: auto;
+    background-color: RGB(26, 49, 41);
+    border: solid 2px;
+}
+
+.draw-message,
+.lose-message,
+.win-message {
+    font-size: 40px;
+    color: black;
+    position: absolute;
+    width: 80%;
+    margin: 30% 10%;
+    padding: auto;
+    text-align: center;
+    display: none;
+
+}
+
+.draw-message p,
+.lose-message p,
+.win-message p {
+    text-align: center;
+}
+
+.boxes {
+    position: absolute;
+    list-style-type: none;
+    padding: 0px;
+    height: 300px;
+    width: 300px;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    margin: auto;
+}
+
+.boxes li {
+    height: 33.3%;
+    cursor: pointer;
+    width: 33.3%;
+    font-size: 90px;
+    text-align: center;
+    display: inline-block;
+    padding: 0px;
+    list-style: none;
+    float: left;
+    over-flow: none;
+}
+
+#canvas {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    margin: auto;
+    height: 300px;
+    width: 300px;
+}
